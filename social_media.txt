@@ -1,3 +1,6 @@
-line 3
-line 4
-line 5
+Users usually access social media services through web-based apps on desktops or download services that offer 
+social media functionality to their mobile devices (e.g., smartphones and tablets). As users engage with these 
+electronic services, they create highly interactive platforms which individuals, communities, and organizations 
+can share, co-create, discuss, participate, and modify user-generated or self-curated content posted online.
+Additionally, social media are used to document memories, learn about and explore things, advertise oneself, 
+and form friendships along with the growth of ideas from the creation of blogs, podcasts, videos, and gaming sites. 
