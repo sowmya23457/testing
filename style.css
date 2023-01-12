@@ -1,0 +1,16 @@
+#footer
+{
+    position: absolute;
+    bottom:0px;
+    top: auto;
+    left: auto;
+    right: auto;
+}
+#logo2 {
+    background-image: url("D:\webpage\logo2.png");
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: auto;
+    right:auto;
+}
