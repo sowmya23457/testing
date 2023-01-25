@@ -1,97 +1,176 @@
+<!DOCTYPE html>
 <html>
-    <center>
-    <header>
-        <div class="container">
-        <nav>
-            <img src="register.jpg" class="logo" width="100" height="100">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="service.html">Service</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-            </ul>
-        </nav>
-            </div>
-    </header>
     <head>
+        <meta charset="utf-8" />
+        <title>Responsive Registration Form</title>
         <style>
-.register
-{
-    position: absolute;
-    height:auto;
-    left:0px;
-    width: 250px;
+	   * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+height: fit-content;
 }
-nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+.container nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.container nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 5px 5px;
+}
+.container img.logo{
+    padding: 10px;
+    margin: 10 28px;
+    display:flex;
+    margin: auto;
+    position:relative;
+}
+nav ul{
+    float:right;
+    margin-right: 20px;
 }
 nav ul li{
-    list-style-type: none;
-    display: inline-block;
-    padding: 10px 20px;
+    display:inline-block;
+    margin: 0 25px;
 }
-body
-{   display: flex;
-    height:auto;
-    background-image: url(student.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    align-items:center;
+body{
+    display:flex;
+    height: 100vh;
     justify-content: center;
+    align-items: center;
+    background: url(student.jpg);
+    background-size: cover;
 }
-.user{
+.container{
     width: 100%;
+    max-height: 650px;
     max-width: 650px;
     background: rgba(0, 0, 0, 0.5);
     padding: 28px;
-    border-radius:  10px;
-    box-shadow: inset -2px 2px 2px white ;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
 }
-.user label{
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 0px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.user-input-box{
+    justify-content:end ;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+
+}
+.user-input-box label{
     width:95%;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
-    margin: 5px 0;
+    margin: 2px 0;
 }
-@media(max-width:600px){
+.user-input-box input{
+    height: 28px;
+    width: 95%;
+    border-radius: 5px;
+    outline:none;
+    border:1px solid grey;
+}
+.container label.gender-title{
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+.container label.gender-category{
+    margin: 7px 0;
+    color:white;
+}
+.container label.gender-category label{
+    padding:0%;
+}
+.container label.gender-category label,
+.container label.gender-category input,
+.container label.form-submit-btn input{
+    cursor:pointer;
+}
+button.form-submit-btn{
+    margin-top:40px;
+
+}
+label.form-submit-btn input{
+    display: block;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    border-radius: 3px;
+    color :white;
+    background: rgba(0, 0, 0, 0.5);
+}
+.container button:hover{
+    background: green;
+    color: white;
+}
+@media(max-width:600px) {
     .container{
         min-width: 0px;
     }
-    .user{
+    .user-input-box{
         margin-bottom: 12px;
-        width:100%;
-    
+        width: 100%;
     }
-    .user:nth-child(2n){
+    .user-input-box{
         justify-content: space-between;
+    }
+    label.gender-category{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
     }
     .main-user-info{
         max-height: 380px;
         overflow: auto;
-    
     }
     .main-user-info::-webkit-scrollbar{
-        width:0
+        width:0;
     }
-    }
-    </style>
-        <link rel="stylesheet" type="text/css" href="D:\registration form\style.css"/>
-        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+}
+</style>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="C:\Users\sowmy\OneDrive\Documents\test_html\style.css">
     </head>
-    <body>
-        <form action="register.html">
-            <div class="user">
-                <center>
-                <h1>Registration Form</h1></center>
-                <h2>
-                <label for="NAME"><b>Name</b></label>
+    <body>  
+        <div class="container">
+            <nav>
+                <img src="register.jpg" class="logo" width="100" height="100">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </nav>
+            <h1 class="form-title">Registration</h1>
+            <form action="#">
+                <div class="main-user-info">
+                    <div class="user-input-box">
+                        <label for="NAME"><b>Name</b></label>
                 <input type="text" name="Name" id="name" placeholder="enter name"><br><br>
                 <label for="Mother Name"><b>Mother Name</b></label>
                 <input type="text" name = "mother name" id="mother name"><br><br>
@@ -99,11 +178,6 @@ body
                 <input type="text" name="father name" id="father name"><br><br>
                 <label for="contact"><b>Contact Number</b></label>
                 <input type="number" name="contact number" id="contact"><br><br>
-                <label type="gender"><b>Gender</b></label>
-                <input type="checkbox" name="male" id="male">
-                <label for="male" >Male</label>
-                <input type="checkbox" name="female" id="female">
-                <label for="female">Female</label><br><br> 
                 <label for="address">Address</label>
                 <input type="text" name="address" id="address"><br><br>
                 <label for="country">Country</label>
@@ -115,15 +189,18 @@ body
                     <option value="AS">Australia</option>
                     <option value="BE">Belgium</option>
                     <option value="IN">India</option>
-                </select>     <br>
-                <center>
-                <button type="submit" class="registerbtn">Register</button>
-                <input type="submit" target="register" value="Sign in">
-                </center>
-                </h2>
+                </select>
+                <label type="gender" class="gender-title"><b>Gender</b></label>
+                <input type="radio" name="gender" id="male"><br>
+                <label for="male" class="gender-category">Male</label>
+                <input type="radio" name="gender" id="female"><br>
+                <label for="female" class="gender-category">Female</label>
+                <button type="submit" class="form-submit-btn">Register</button> 
+                    
+                    </div>
 
-            </div>
-        </form>
+                </div>
+            </form> 
+        </div>
     </body>
-</center>
 </html>
