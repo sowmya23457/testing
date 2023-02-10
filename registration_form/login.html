@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Responsive Registration Form</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    </head>
+    <style>
+        * {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+height: fit-content;
+}
+body{
+    display:flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: url(student.jpg);
+    background-size: cover;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.container{
+    width: 100%;
+    max-height: 650px;
+    max-width: 650px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 28px;
+    border-radius: 10px;
+    box-shadow: inset -2px 2px 2px white;
+}
+.form-title{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 0px;
+    color:white;
+    text-shadow: 2px 2px 2px black;
+    border-bottom: solid 1px white;
+}
+.main-user-info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.username{
+    justify-content:end ;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+
+}
+.username label{
+    width:95%;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 2px 0;
+}
+.Password{
+    justify-content:end ;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.Password label{
+    width: 95%;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 2px 0;
+}
+.username input{
+    height: 28px;
+    width: 95%;
+    border-radius: 5px;
+    outline:none;
+    border:1px solid grey;
+}
+.Password input{
+    height: 28px;
+    width: 95%;
+    border-radius: 5px;
+    outline:none;
+    border:1px solid grey;
+} 
+.container .submit-button button{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border:none;
+    margin: auto;
+    border-radius: 3px;
+    color :white;
+    background: rgba(0, 0, 0, 0.5);
+    margin-left: 170px;
+}
+.container button:hover{
+    justify-content: center;
+    background: green;
+    color: white;
+    align-items: center;
+}
+.container .submit-button button{
+    text-align: center;
+}
+@media(max-width:600px) {
+    .username{
+        margin-bottom: 12px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .Password{
+        margin-bottom: 12px;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .submit-button{
+        justify-content: center;
+        justify-content: space-between;
+    }
+    .main-user-info{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .main-user-info::-webkit-scrollbar{
+        width:0;
+    }
+
+}
+    </style>
+    <body>
+        <div class="container">
+            <h1 class="form-title">Login</h1><br><br>
+                <form action="#">
+                    <div class="main-user-info">
+                        <div class="username">
+                            <label for="username"><b>Username</b></label>
+                            <input type="text" name="username" id="username" placeholder="enter username"><br><br>
+                        </div>
+                        <div class="Password">
+                            <label for="Password"><b>Password</b></label>
+                            <input type="text" name="Password" id="username" placeholder="enter Password"><br><br>
+                        </div>
+                        <center>
+                        <div class="submit-button">
+                            <button type="button" onclick="myfunction()">Login</button>
+                            <script>
+                                function myfunction()
+                                {
+                                    window.location="homepage.html";
+                                }
+                            </script>
+                        </div>
+                        </center>
+                    </div>
+                </form>
+        </div>
+    </body>
+</html>
