@@ -6,6 +6,138 @@
         <meta name="viewport" content="width=device-width" initial-scale="1.0">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        <style>
+            *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: fit-content;
+}
+.header{
+    min-height:100vh;
+    width:100%;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-position: center;
+    position:relative;
+}
+
+nav .fa{
+    color:white;
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_links ul{
+    float: right;
+    flex-wrap: nowrap;
+    margin-right: 20px;
+    padding: 20px;
+}
+.nav_links ul li{
+    display: inline-block;
+    padding:50px;
+    justify-content: space-between;
+}
+.nav_links ul li a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.nav_links ul li a:hover{
+    color: black;
+    background: #fff;
+    text-decoration: none;
+    
+}
+.nav_links ul li a.active{
+    color:black;
+    background: white;
+}
+.logo{
+    
+    width: 100px;
+    height: 100px;
+}
+.container h1{
+    color: white;
+    font-size: 60px;
+    padding: 60px 250px;
+    word-spacing: 20px;
+    letter-spacing: 2.5px;
+    font-weight: 300;
+    
+}
+.container p{
+    color: white;
+    word-spacing: 1.5px;
+    margin: -40px 280px;
+    font-size: 15px;
+}
+.container a{
+    display: inline-block;
+    border: 1px solid #fff;
+    color:white;
+    cursor: pointer;
+    text-decoration: none;
+    padding:10px 34px;
+    margin: 50px 520px;
+    justify-content: center;
+    position:relative;
+    background: transparent;
+}
+.container a:hover{
+    background: rgb(149, 26, 26);
+}
+.course{
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;   
+}
+.course p{
+    font-size: 14px;
+    font-weight: 300;
+    padding:20px;   
+}
+.row{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+.course-col{
+    flex-basis: 30%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: #fdece7;
+    padding: 20px 10px;
+}
+.campus{
+    text-align: center;
+    width: 100%;
+    padding: 100px;
+}
+.footer{
+    text-align: center;
+    width: 100%;
+    padding:100px;
+}
+.footer p{
+    padding:20px;
+    word-spacing: 2px;
+}
+.icons{
+    color: black;
+    padding: 10px;
+    word-spacing: 5px;
+}
+        </style>
     </head>
     <body>
         <section class="header">
