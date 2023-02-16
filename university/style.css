@@ -22,6 +22,7 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
+
 .nav_links ul{
     float: right;
     flex-wrap: nowrap;
@@ -37,12 +38,20 @@ nav{
     color: white;
     font-weight: bold;
     text-decoration: none;
+    position: relative;
 }
-.nav_links ul li a:hover{
-    color: black;
-    background: #fff;
-    text-decoration: none;
-    
+.nav_links ul li a::after{
+    content:"";
+    position: absolute;
+    background-color: maroon;
+    height: 3px;
+    width:0%;
+    left:0;
+    bottom: -10px;
+    transition:0.5s;
+}
+.nav_links ul li a:hover::after{
+    width: 100%;
 }
 .nav_links ul li a.active{
     color:black;
@@ -68,21 +77,27 @@ nav{
     margin: -40px 280px;
     font-size: 15px;
 }
-.container a{
-    display: inline-block;
-    border: 1px solid #fff;
-    color:white;
-    cursor: pointer;
-    text-decoration: none;
-    padding:10px 34px;
-    margin: 50px 520px;
-    justify-content: center;
-    position:relative;
+.container button{
+    padding:20px 30px; 
+    margin:120px;
     background: transparent;
+    border-radius: 20px;
+    background-color:none;
+    color:maroon;
+    transition: all 0.5s ease-out;
+
 }
-.container a:hover{
-    background: rgb(149, 26, 26);
+.container .btn{
+    margin:90px 520px;
+    font-weight: bold;
+    background:linear-gradient(to right,#e84118 50%,rgb(251, 251, 251) 50%);
+    background-size: 200% 100%;
+    background-position: right;
 }
+.container .btn:hover{
+    background-position: left   ;
+}  
+
 .course{
     width: 100%;
     text-align: center;
