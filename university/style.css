@@ -128,3 +128,134 @@ nav{
     padding: 10px;
     word-spacing: 5px;
 }
+.nav_bar{
+    background-image:url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    
+}
+.nav_bar h1{
+    color:white;
+    padding:100px 550px;
+    font-size: 30px;
+}
+.about-us{
+    background:transparent;
+    flex-basis: 15%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding:20px 10px;
+    display: flex;
+    width:80%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 5px;
+}
+.about-col{
+    flex-basis: 48%;
+    padding: 20px;
+}   
+.about-col h2{
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+}
+.about-col p{
+    padding-top:10px;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+}
+.about-col a{
+    box-sizing: border-box;
+    border-radius: 1px;
+    background:transparent;
+    border: 2px solid maroon;
+    text-decoration: none;
+    color:black;
+    padding:10px 20px;
+    margin:30px  120px;
+    display: inline-block;
+}
+.about-col a:hover{
+    background:rgb(251, 97, 97);
+}
+.nav_bar h2{
+   color:white;
+   padding:130px 530px;
+   font-size: 30px;
+}
+.facilities h1{
+    padding: 10px 510px;
+    font-size: 40px;
+}
+.facilities-col{ 
+    padding:10px;
+    flex-basis: 20%;
+    width:90%;
+    padding-bottom: 10px;
+    
+}
+.facilities-col h3{
+    font-size: 30px;
+    padding: 10px 120px;
+    padding-bottom: 30px;
+}
+.nav_bar h3{
+    color:white;
+    padding:130px 350px;
+    font-size: 30px;
+ }
+ .blog-left img{
+    padding-top: 30px;
+    margin: 100px;
+ }
+ .comment-box h3{
+    font-size: 25px;
+    padding-bottom: 10px;
+    word-spacing: 1.2px;
+ }
+ .comment-form input{
+    box-sizing: border-box;
+    padding:8px;
+    display: table-column;
+ }
+ .comment-box {
+    border:1px solid #ccc;
+    margin:50px 10px;
+    padding: 10px 20px;
+}
+.comment-box input,.comment-box textarea,.comment-box button{
+    padding:15px;
+    width:70%;
+    margin-bottom: 17px;
+
+}
+.blog{
+    display: flex;
+}
+.blog-right{
+    flex-basis: 32%;
+    padding-top: 30px;
+    margin: 100px;
+}
+.blog-right h3{
+    background:red;
+    color: black;
+    padding: 7px 5px;
+}
+.blog-right div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:8px;
+}
+.nav_bar h4{
+    color:white;
+    padding:130px 550px;
+    font-size: 30px;
+ }
+.contact-col i{
+    padding-top: 30px;
+    font-size: 20px;
+}
