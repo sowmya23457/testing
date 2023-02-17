@@ -236,7 +236,6 @@ nav{
     display: table-column;
  }
  .comment-box {
-    border-radius: 20px;
     border:1px solid #0c0c0c;
     background:#494848;
     width:80%;
@@ -343,17 +342,17 @@ nav{
     background:green
 }
 #rate-1:checked ~ form header::before{
-    content:"I just hate it ";
+    content:"I just hate it 😑 ";
 }
 #rate-2:checked ~ form header::before{
-    content:"I dont like it ";
+    content:"I dont like it 😕";
 }
 #rate-3:checked ~ form header::before{
-    content:"It was awesome ";
+    content:"It was awesome 😁 ";
 }
 #rate-4:checked ~ form header::before{
-    content:"I  liked  it ";
+    content:"I  liked  it  🤩";
 }
 #rate-5:checked ~ form header::before{
-    content:"I  loved  it ";
+    content:"I  loved  it 😍 ";
 } 
