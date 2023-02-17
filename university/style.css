@@ -236,15 +236,58 @@ nav{
     display: table-column;
  }
  .comment-box {
-    border:1px solid #ccc;
+    border-radius: 20px;
+    border:1px solid #0c0c0c;
+    background:#494848;
+    width:80%;
+    height:50%;
     margin:50px 10px;
     padding: 10px 20px;
 }
 .comment-box input,.comment-box textarea,.comment-box button{
-    padding:15px;
-    width:70%;
+    padding:10px;
+    width:100%;
     margin-bottom: 17px;
 
+}
+.comment{
+    display:flex;
+    width:100%;
+}
+.star-widget{
+   padding:40px 90px; 
+   margin: 30px;
+   margin-right: 90px;
+}
+.star{
+    width:500px;
+    height:350px;
+    border: 1px solid #252323;
+    margin:40px;
+    margin-right: 50px;
+    background: #535252;
+    border-radius: 20px;
+
+}
+.star-widget label{
+    font-size: 35px;
+    color:#444;
+    padding:18px;
+    float:right;
+    transition:all 0.2s ease;
+    width:20%;
+}
+.star-widget input:not(:checked)~label:hover,input:not(:checked)~label:hover~label{
+    color:#fd4;
+}
+.star-widget input:checked~label{
+    color:#fd4;
+}
+.star-widget input:checked~label{
+    color:#fe7;
+}
+.star-widget input{
+    display:none;
 }
 .blog{
     display: flex;
@@ -274,3 +317,43 @@ nav{
     padding-top: 30px;
     font-size: 20px;
 }
+.star-widget header{
+    padding:20px 60px;
+    padding-top: 60px;
+    color:rgb(212, 201, 43);
+    font-size: 20px;
+    font-weight: bold;
+    width:200%;
+}
+.star-widget textarea{
+    padding:10px;
+
+
+}
+.star-widget .post-btn{
+    padding:15px 90px;
+}
+.star-widget button{
+    padding:5px 15px;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.star-widget button:hover{
+    background:green
+}
+#rate-1:checked ~ form header::before{
+    content:"I just hate it ";
+}
+#rate-2:checked ~ form header::before{
+    content:"I dont like it ";
+}
+#rate-3:checked ~ form header::before{
+    content:"It was awesome ";
+}
+#rate-4:checked ~ form header::before{
+    content:"I  liked  it ";
+}
+#rate-5:checked ~ form header::before{
+    content:"I  loved  it ";
+} 
