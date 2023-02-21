@@ -54,6 +54,7 @@ nav{
     background-color:rgb(223, 55, 55);
     font-size: 25px;
     font-family:monospace;
+    border-radius: 5px;
 }
 .nav_bar .nav_links li a:active{
     color:white;
