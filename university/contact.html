@@ -19,7 +19,12 @@
                         <span class="bar"></span>
                     </a>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" onclick="home()">HOME</a></li>
+                    <script>
+                        function home(){
+                            window.location="index.html"
+                        }
+                    </script>
                     <li><a href="#" onclick="about()">ABOUT</a></li>
                     <script>
                         function about(){
@@ -38,7 +43,7 @@
                             window.location="course.html"
                         }
                     </script>
-                    <li><a href="#" onclick="contact()">CONTACT</a></li>
+                    <li><a href="#" class="options" onclick="contact()">CONTACT</a></li>
                     <script>
                         function contact(){
                             window.location="contact.html"
@@ -49,29 +54,6 @@
             </nav>
             <h4>Contact Us</h4>
         </div>
-        </section>
-        <section class="contact">
-            <div class="column">
-                <div class="contact-col">
-                    <i class="fa fa-home">     Address</i>
-                    <span>
-                        <h5>xyz building</h5>
-                        <p>Banglore,Karnataka</p>
-                    </span>
-                </div>
-                <div class="contact-col">
-                    <i class="fa fa-phone">     Contact Number</i>
-                    <span>
-                        <h5>+1(2735763)</h5>
-                    </span>
-                </div>
-                <div class="contact-col">
-                    <i class="fa fa-envelope">     Email Id</i>
-                    <span>
-                        <h5>xyz-university@gmail.com</h5>
-                    </span>
-                </div>
-            </div>
         </section>
         <section class="comment">
                 <div class="comment-box">
@@ -106,7 +88,9 @@
                     </form>
                 </div></div>
         </section>
+        
         <section class="footer">
+            <div class="icons">
             <h2>About Us</h2>
             <p>A university is an institution of higher education and research which <br>awards academic degrees in several academic disciplines.</p>
             <div class="icons">
@@ -114,7 +98,29 @@
                 <i class="fa fa-facebook"></i>
                 <i class="fa fa-twitter"></i>
                 <i class="fa fa-whatsapp"></i>
-            </div>
+            </div></div>
+            <section class="contact">
+                <div class="row">
+                    <div class="contact-address">
+                        <i class="fa fa-home">Address</i>
+                        <span>
+                            <p>xyz building<br>Banglore,Karnataka</p>
+                        </span>
+                    </div>
+                    <div class="contact-number">
+                        <i class="fa fa-phone">Contact Number</i>
+                        <span>
+                            <p>+1(2735763)</p>
+                        </span>
+                    </div>
+                    <div class="contact-email">
+                        <i class="fa fa-envelope">Email Id</i>
+                        <span>
+                           <p>xyz-university@gmail.com</p>
+                        </span>
+                    </div>
+                </div>
+            </section>
         </section>
       </body>
 </html>

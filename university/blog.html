@@ -19,14 +19,19 @@
                         <span class="bar"></span>
                     </a>
                 <ul>
-                    <li><a href="#">HOME</a></li>
+                    <li><a href="#" onclick="home()">HOME</a></li>
+                    <script>
+                        function home(){
+                            window.location="index.html"
+                        }
+                    </script>
                     <li><a href="#" onclick="about()">ABOUT</a></li>
                     <script>
                         function about(){
                             window.location="about.html"
                         }
                     </script>
-                    <li><a href="#" onclick="blog()">BLOG</a></li>
+                    <li><a href="#" class="options"onclick="blog()">BLOG</a></li>
                     <script>
                         function blog(){
                             window.location="blog.html"

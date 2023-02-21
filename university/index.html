@@ -15,25 +15,30 @@
                 <div class="nav_links">
                 <ul>
                     <li><a href="#" class="options">HOME</a></li>
-                    <li><a href="#" class="onclick="about()">ABOUT</a></li>
+                    <script>
+                        function home(){
+                            window.location="home.html"
+                        }
+                    </script>
+                    <li><a href="#"onclick="about()">ABOUT</a></li>
                     <script>
                         function about(){
                             window.location="about.html"
                         }
                     </script>
-                    <li><a href="#" class="options" onclick="blog()">BLOG</a></li>
+                    <li><a href="#"onclick="blog()">BLOG</a></li>
                     <script>
                         function blog(){
                             window.location="blog.html"
                         }
                     </script>
-                    <li><a href="#"class="options" onclick="course()">COURSE</a></li>
+                    <li><a href="#"onclick="course()">COURSE</a></li>
                     <script>
                         function course(){
                             window.location="course.html"
                         }
                     </script>
-                    <li><a href="#" class="options" onclick="contact()">CONTACT</a></li>
+                    <li><a href="#" onclick="contact()">CONTACT</a></li>
                     <script>
                         function contact(){
                             window.location="contact.html"

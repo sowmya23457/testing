@@ -49,12 +49,13 @@ nav{
     left:0;
     bottom: -10px;
     transition:0.5s;
-}
-.nav_links a:hover,.active a{
-    background-color: blueviolet;
+}   
+.nav_links .options{
+    background-color:rgb(223, 55, 55);
+    font-size: 25px;
+    font-family:monospace;
 }
 .nav_bar .nav_links li a:active{
-    background: #e84118;
     color:white;
 }
 .nav_links ul li a:hover::after{
@@ -141,9 +142,12 @@ nav{
     padding: 100px;
 }
 .footer{
+    background: #acabab;
+    box-sizing: border-box;
+    border: 1px solid #0c0c0c;
     text-align: center;
     width: 100%;
-    padding:100px;
+    
 }
 .footer p{
     padding:20px;
@@ -168,16 +172,13 @@ nav{
     font-size: 30px;
 }
 .about-us{
-    background:transparent;
-    flex-basis: 15%;
     box-sizing: border-box;
     border-radius: 10px;
     padding:20px 10px;
     display: flex;
     width:80%;
     margin: auto;
-    padding-top: 80px;
-    padding-bottom: 5px;
+    align-items: center;
 }
 .about-col{
     flex-basis: 48%;
@@ -259,6 +260,7 @@ nav{
     padding: 30px;
     margin-left:300px;
     margin-right: 300px;
+    margin-top: 70px;
  }
 .comment-box input,.comment-box textarea,.comment-box button{
     padding:10px;
@@ -270,12 +272,14 @@ nav{
    padding:40px 90px; 
    margin: 30px;
    margin-right: 90px;
+   
 }
 .star{
     width:350px;
     height: 280px;
     background:#918f8f;
-    margin-top:50px;
+    margin-top:70px;
+    margin-bottom: 150px;
     margin-left:450px;
     border: 1px solid #0c0c0c;
     border-radius: 5px;
@@ -327,8 +331,19 @@ nav{
     padding:130px 550px;
     font-size: 30px;
  }
-.contact-col i{
-    padding-top: 30px;
+ .contact{
+    padding:-10px;
+ }
+.contact-address i{
+    font-size: 20px;
+}
+.contact-number i{
+    font-size: 20px;
+}
+.contact-number{
+    padding-left: 30px;
+}
+.contact-email i{
     font-size: 20px;
 }
 .star-widget header{
