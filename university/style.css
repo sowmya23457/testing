@@ -143,9 +143,6 @@ nav{
     padding: 100px;
 }
 .footer{
-    background: #acabab;
-    box-sizing: border-box;
-    border: 1px solid #0c0c0c;
     text-align: center;
     width: 100%;
     
@@ -155,6 +152,23 @@ nav{
     word-spacing: 2px;
 }
 .icons{
+    color: black;
+    padding: 10px;
+    word-spacing: 5px;
+}
+.footer-contact{
+    background: #acabab;
+    box-sizing: border-box;
+    border: 1px solid #0c0c0c;
+    text-align: center;
+    width: 100%;
+    
+}
+.footer-contact p{
+    padding:20px;
+    word-spacing: 2px;
+}
+.icons-contact{
     color: black;
     padding: 10px;
     word-spacing: 5px;
